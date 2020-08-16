@@ -54,11 +54,6 @@ function getBorderRadiusString(event) {
 
 function copyToClipboard() {
   const cssCode = document.querySelector('.border-radius-css-code');
-  navigator.clipboard.writeText(cssCode.textContent)
+  navigator.clipboard.writeText(cssCode.textContent);
+  alert('Border-radius code was added to clipboard');
 }
-
-
-console.log({
-  border: mountBorderRadiusString(getBorderRadiusInputValuesString())
-});
-
