@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="./css/reset.css">
+  <link rel="stylesheet" href="./css/styles.css">
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Fira+Code:wght@500&display=swap" rel="stylesheet">
+  <title>Border-Radius Previewer</title>
+</head>
+<body>
+  <main>
+    <h1 class="title">
+      Border-Radius Previewer
+    </h1>
+
+    <p class="instruction">
+      The value applied to the borders is in pixels
+    </p>
+    
+    <div class="border-radius-container">
+
+      <div class="border-radius-input-block" id="top-left-block">
+        <input
+          type="number"
+          name="top-left"
+          id="top-left"
+          value="0"
+          class="border-radius-input"
+          onChange="getBorderRadiusString(this)"
+        >
+        <label for="top-left" class="border-radius-label">
+          Top left
+        </label>
+      </div>
+
+      <div class="border-radius-input-block" id="top-right-block">
+        <input
+          type="number"
+          name="top-right"
+          id="top-right"
+          value="60"
+          class="border-radius-input"
+          onChange="getBorderRadiusString(this)"
+        >
+        <label for="top-right" class="border-radius-label">
+          Top right
+        </label>
+      </div>
+
+      <div class="border-radius-input-block" id="bottom-right-block">
+        <input
+          type="number"
+          name="bottom-right"
+          id="bottom-right"
+          value="30"
+          class="border-radius-input"
+          onChange="getBorderRadiusString(this)"
+        >
+        <label for="bottom-right" class="border-radius-label">
+          Bottom Right
+        </label>
+      </div>
+      
+      <div class="border-radius-input-block"id="bottom-left-block">
+        <input
+          type="number"
+          name="bottom-left"
+          id="bottom-left"
+          value="15"
+          class="border-radius-input"
+          onChange="getBorderRadiusString(this)"
+        >
+        <label for="bottom-left" class="border-radius-label">
+          Bottom left
+        </label>
+      </div>
+
+      <div
+        class="border-radius-box"
+        style="border-radius: 0 60px 30px 15px;"
+      >
+        <p class="border-radius-css-code">
+          border-radius: 0 60px 30px 15px;
+        </p>
+        <button onclick="copyToClipboard()" class="copy">
+          <img src="./icons/copy.svg" alt="copy">
+        </button>
+      </div>
+
+    </div>
+  </main>
+</body>
+<script src="./js/main.js"></script>
+</html>

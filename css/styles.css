@@ -1,0 +1,143 @@
+:root {
+  --main-color: #FA8072;
+  --main-color-light-03: #FFD8D4;
+
+  --gray-01: #F8F9FA;
+  --gray-04: #CCD2DB;
+  --gray-05: #8B9FBA;
+  --gray-07: #6D7989;
+  --gray-08: #404B5A;
+
+  --green-02: #27AE60;
+}
+
+/* Chrome, Safari, Edge, Opera */
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+/* Firefox */
+input[type=number] {
+  -moz-appearance: textfield;
+}
+
+main {
+  margin-top: 35px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center; 
+}
+
+.title {
+  color: var(--gray-07);
+  font-family: Montserrat;
+  font-size: 36px;
+  font-weight: 500; 
+}
+
+.instruction {
+  color: var(--gray-07);
+  font-family: Montserrat;
+  font-weight: 500;
+  padding-top: 38px;
+}
+
+.border-radius-container {
+  display: grid;
+  grid-template-columns: 70px 510px 70px;
+  grid-template-rows: 32px 26px 249px 58px;
+  margin-top: 12px;
+}
+
+.border-radius-input-block {
+  display: flex;
+  flex-direction: column;
+  width: 70px;
+  height: 58px;
+  text-align: center;
+  justify-content: space-between;
+}
+
+#top-left-block {
+  grid-column-start: 1;
+  grid-column-end: 2;
+  grid-row-start: 1;
+  grid-row-end: 3;
+}
+
+#top-right-block {
+  grid-column-start: 3;
+  grid-column-end: 4;
+  grid-row-start: 1;
+  grid-row-end: 3;
+}
+
+#bottom-right-block {
+  grid-column-start: 3;
+  grid-column-end: 4;
+  grid-row-start: 4;
+  grid-row-end: 5;
+}
+
+#bottom-left-block {
+  grid-column-start: 1;
+  grid-column-end: 2;
+  grid-row-start: 4;
+  grid-row-end: 5;
+}
+
+.border-radius-input {
+  border: 1px solid var(--main-color-light-03);
+  border-radius: 4px;
+  color: var(--gray-05);
+  width: 70px;
+  height: 32px;
+  text-align: center;
+}
+
+.border-radius-label {
+  color: var(--gray-08);
+  font-family: Roboto;
+  font-size: 12px;
+  font-weight: 400;
+}
+
+.border-radius-box {
+  background-color: var(--main-color);
+  width: 455px;
+  height: 275px;
+  margin: auto;
+
+  grid-column-start: 2;
+  grid-column-end: 3;
+  grid-row-start: 2;
+  grid-row-end: 4;
+}
+
+.border-radius-css-code {
+  color: var(--gray-01);
+  font-family: 'Fira Code';
+  font-size: 14px;
+  font-weight: 500;
+  margin: 25% 0 25% 30px;
+  display: inline-block;
+}
+
+.copy {
+  border: 0;
+  background: var(--main-color);
+  cursor: pointer;
+  padding: 0;
+  width: 28px;
+  height: 28px;
+  vertical-align: middle;
+}
+
+.copy img {
+  width: 20px;
+  height: 20px;
+  stroke: var(--gray-01);
+}
