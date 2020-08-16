@@ -27,3 +27,6 @@ For the first version, I decided to do the main features, as described in the fo
 - [ ] Change all 8 possible values of the border-radius in order to create a complex shape [as in this example](https://codepen.io/thebabydino/pen/zbqPVd)
 - [ ] And refactor for a cleaner code.
 
+## Give it a try!
+
+You can use it by accessing the following [link](https://border-radius-previewer.vercel.app/)!
